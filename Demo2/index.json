@@ -1,0 +1,40 @@
+{
+  "title": "Challenge example",
+  "description": "Demo challenge split de terminales",
+  "difficulty": "Intermediate",
+  "type": "challenge@0.5",
+  "time": "30",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "foreground.sh",
+      "courseData": "configure.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "assets": {
+    "host01": [
+        {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+        {"file": "cheat", "target": "/usr/local/bin/", "chmod": "+x"},
+        {"file": "deploy.yaml", "target": "/opt/"}
+    ]
+  },
+  "environment": {
+    "uilayout": "terminal-terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
