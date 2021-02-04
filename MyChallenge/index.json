@@ -4,11 +4,19 @@
   "difficulty": "Advance",
   "time": "60 minutes",
   "details": {
-    "steps": [ ],
+    "steps": [  
+      {
+      "title": "Step 1 - Scenario Structure",
+      "text": "step1.md"
+      }
+    ],
     "intro": {
       "text": "intro.md",
       "code": "foreground.sh",
       "courseData": "configure.sh"
+    },
+    "finish": {
+      "text": "finish.md"
     },
     "assets": {
       "host01": [
@@ -19,11 +27,11 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "terminal-terminal",
     "showide": true,
-    "hidesidebar": true
+    "hidesidebar": false
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
+    "imageid": "kubernetes"
   }
 }
